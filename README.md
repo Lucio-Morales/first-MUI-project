@@ -1,6 +1,6 @@
 # First MUI Project
 
-Este es un proyecto de práctica que armé para familiarizarme con **Material UI**, ya que es una tecnología solicitada en una vacante a la que estoy aplicando. Nunca lo había usado antes, así que decidí estudiar la documentación oficial y construir esta pequeña aplicación desde cero para entender cómo funciona la librería.
+Este es un proyecto de práctica que armé para familiarizarme con **Material UI**
 
 ## 🚀 Tecnologías utilizadas
 
