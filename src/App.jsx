@@ -3,9 +3,9 @@ import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 
 function App() {
-  const [isLogin, setIsLogin] = useState(true); // Estado para determinar qué formulario mostrar
+  const [isLogin, setIsLogin] = useState(true);
+  const [onDashboard, setOnDashboard] = useState(false);
 
-  // Función para alternar entre login y registro
   const toggleForm = () => {
     setIsLogin(!isLogin);
   };

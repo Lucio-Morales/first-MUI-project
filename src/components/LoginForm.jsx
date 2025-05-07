@@ -1,13 +1,23 @@
 import { useState } from 'react';
-import { TextField, Button, Typography, Box, Card, CardContent, CardHeader } from '@mui/material';
-
+import { TextField, Typography, Box, Card, CardContent, CardHeader } from '@mui/material';
+import { LoadingButton } from '@mui/lab';
+import { useNavigate } from 'react-router-dom';
 export default function LoginForm({ onToggleForm }) {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
+    setLoading(true);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     console.log({ email, password });
+
+    setLoading(false);
+    navigate('/dashboard');
   };
 
   return (
@@ -33,9 +43,10 @@ export default function LoginForm({ onToggleForm }) {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <Button type="submit" variant="contained" fullWidth sx={{ mt: 2 }}>
+
+          <LoadingButton type="submit" variant="contained" fullWidth loading={loading} sx={{ mt: 2 }}>
             Entrar
-          </Button>
+          </LoadingButton>
 
           <Typography variant="body2" align="center" sx={{ mt: 2 }}>
             ¿Eres nuevo?
