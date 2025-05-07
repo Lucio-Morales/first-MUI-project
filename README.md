@@ -16,8 +16,6 @@ La aplicación muestra un formulario de **login** y **registro** utilizando comp
 
 ## 🛠️ Cómo levantar el proyecto
 
-## 🛠️ Cómo levantar el proyecto
-
 1. Cloná el repositorio:
 
    ```bash
