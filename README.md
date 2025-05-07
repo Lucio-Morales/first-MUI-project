@@ -1,12 +1,50 @@
-# React + Vite
+# First MUI Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de práctica que armé para familiarizarme con **Material UI**, ya que es una tecnología solicitada en una vacante a la que estoy aplicando. Nunca lo había usado antes, así que decidí estudiar la documentación oficial y construir esta pequeña aplicación desde cero para entender cómo funciona la librería.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/)
+- [Material UI](https://mui.com/)
+- [React Router](https://reactrouter.com/)
+- [Vite](https://vitejs.dev/)
+- [pnpm](https://pnpm.io/)
 
-## Expanding the ESLint configuration
+## 🧩 ¿Qué hace esta app?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+La aplicación muestra un formulario de **login** y **registro** utilizando componentes de Material UI. Al iniciar sesión, el usuario es redirigido a un dashboard simple. Toda la interfaz está construida exclusivamente con Material UI para explorar sus capacidades de diseño y componentes listos para usar.
+
+## 🛠️ Cómo levantar el proyecto
+
+## 🛠️ Cómo levantar el proyecto
+
+1. Cloná el repositorio:
+
+   ```bash
+   git clone https://github.com/tu-usuario/first-MUI-project.git
+   cd first-MUI-project
+   ```
+
+2. Instalá las dependencias y levantá el proyecto usando el gestor de paquetes que prefieras:
+
+   - **Con pnpm**:
+
+     ```bash
+     pnpm install
+     pnpm dev
+     ```
+
+   - **Con npm**:
+
+     ```bash
+     npm install
+     npm run dev
+     ```
+
+   - **Con yarn**:
+     ```bash
+     yarn install
+     yarn dev
+     ```
+
+3. Abrí el navegador en [`http://localhost:5173`](http://localhost:5173)
